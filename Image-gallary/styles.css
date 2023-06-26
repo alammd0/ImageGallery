@@ -1,0 +1,60 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@300&family=Baloo+Bhaina+2&family=Bree+Serif&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Anuphan", sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin: 10px;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: capitalize;
+	/* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.gallery {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	position: relative;
+}
+
+h2 {
+	position: absolute;
+	margin: 10px 0 0 10px;
+	font-weight: 400;
+	color: white;
+	font-size: 1rem;
+	font-family: sans-serif;
+    z-index: 9;
+	/* filter:opacity(0); */
+}
+
+/* 
+div,h2:hover{
+    filter: opacity(1);
+} */
+
+.img {
+	height: 400px;
+	width: 400px;
+	border: 5px solid #54385a;
+	border-radius: 5%;
+    filter: grayscale(100%);
+	transition: all 1s;
+}
+
+.img:hover{
+    box-shadow: -2px 1px 17px 9px rgba(206, 26, 26, 0.75);
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px #333);
+}
